@@ -4,7 +4,7 @@ Code for MTRX3760 AP Hat
 
 This code found in this repo is on each Turtlebot in a hidden ".mtrx" folder.
 
-This is used in conjunction with the following lines in the Turtlebot crontab to automatically set hostname, change network state using hardware switch and indicate status live using an LED. 
+This is used in conjunction with the following lines in the Turtlebot crontab to automatically set hostname, change network state using hardware switch and indicate status live using an LED. You can edit the crontab if needed by running `crontab -e`.
 
 ```bash
 
