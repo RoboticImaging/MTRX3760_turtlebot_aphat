@@ -1,0 +1,18 @@
+#Wifi
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
+  wifis:
+    
+    wlan0:
+      dhcp4: yes
+      dhcp6: yes
+      addresses: [172.17.33.30/32]
+      optional: true
+      access-points:
+        KIRBYBOTS:
+          password: room330!

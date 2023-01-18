@@ -1,0 +1,17 @@
+#AccessPoint
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: yes
+      dhcp6: yes
+      optional: true
+      access-points:
+        eb8909a7pi:
+          password: turtlebot
+          mode: ap
