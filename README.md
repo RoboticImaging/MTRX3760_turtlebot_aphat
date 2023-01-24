@@ -1,10 +1,14 @@
-# 3760_turtlebot_aphat
+# MTRX3760 AP Hat Code + Documentation
 Code for MTRX3760 AP Hat
 
+To be added:
+- [ ] Altium PCB Design Files
+- [ ] PCB Schematic
+- [ ] Bill of Materials
 
-This code found in this repo is on each Turtlebot in a hidden ".mtrx" folder found at `/home/ubuntu/`.
+The code found in this repo (in the `code` folder) is on each Turtlebot in a hidden `.mtrx` folder found at `/home/ubuntu/`.
 
-This is used in conjunction with the following lines in the Turtlebot crontab to automatically set hostname, change network state using hardware switch and indicate status live using an LED. You can edit the crontab if needed by running `crontab -e`.
+This is used in conjunction with the following lines in the Turtlebot crontab to automatically set hostname, change network state using hardware switch and indicate status live using an LED. You can edit the crontab if needed by running `crontab -e`. You can check the following lines are listed by running `crontab -l`.
 
 ```bash
 
@@ -14,7 +18,11 @@ This is used in conjunction with the following lines in the Turtlebot crontab to
 
 ```
 
-We also have additional code which spits out the MAC Address for the Turtlebot and provides a brief welcome message to students. This is included in `/etc/update-motd.d/99-mtrx-mac`. If altering or reconfiguring, you will need to ensure you change permissions such that this file is executable (i.e. `chmod +x` it).
+Students will interface with 2 scripts that can reset and add WiFi networks. These are provided in the `home_files` folder and are to be placed at `/home/ubuntu/`. They are also shipped in the content for the `.mtrx` folder as a backup should they ever be deleted.
+
+
+
+We also have additional code which spits out the MAC Address for the Turtlebot and provides a brief welcome message to students. This is included in `/etc/update-motd.d/99-mtrx-mac`. If altering or reconfiguring, you will need to ensure you change permissions such that this file is executable (i.e. `chmod +x` it). This is also provided in the motd folder of this repo.
 
 ```bash
 #!/bin/sh

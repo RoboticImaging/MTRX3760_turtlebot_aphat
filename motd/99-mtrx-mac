@@ -1,0 +1,9 @@
+#!/bin/sh
+
+IFACE=wlan0
+read mac_address </sys/class/net/$IFACE/address
+
+echo "$(tput -T xterm setaf 1)Welcome to MTRX @ The University of Sydney$(tput -T xterm sgr0)"
+printf "\nThis is a Turtlebot3 Burger. Please report any issues to your tutor at first boot.\n"
+
+echo "Turtlebot3 has MAC Address: $(echo $mac_address)."
