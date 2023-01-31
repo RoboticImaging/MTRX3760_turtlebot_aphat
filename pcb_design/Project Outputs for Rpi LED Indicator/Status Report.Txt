@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Rpi LED Indicator.PrjPcb]
+   Generated File[Rpi LED Indicator.GTO]
+   Generated File[Rpi LED Indicator.GTP]
+   Generated File[Rpi LED Indicator.GTS]
+   Generated File[Rpi LED Indicator.GTL]
+   Generated File[Rpi LED Indicator.GBL]
+   Generated File[Rpi LED Indicator.GBS]
+   Generated File[Rpi LED Indicator.GBP]
+   Generated File[Rpi LED Indicator.GBO]
+   Generated File[Rpi LED Indicator.GKO]
+   Generated File[Rpi LED Indicator.RUL]
+   Generated File[Rpi LED Indicator.EXTREP]
+   Generated File[Rpi LED Indicator.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 20:51:37 On 12/12/2022
