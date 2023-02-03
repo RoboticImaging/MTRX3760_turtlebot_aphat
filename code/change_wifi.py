@@ -20,7 +20,10 @@ GPIO.setup(18, GPIO.IN)
 
 
 def main():
-
+	# Set as an access point initially, fix undefined behaviour if no AP Hat.
+	os.system('sudo cp /home/ubuntu/.mtrx/ap.yaml /etc/netplan/turtlebot_netplan.yaml')
+	print("Changing to Access Point")
+	os.system('sudo netplan apply')
 	while True:
 		# GPIO.wait_for_edge(button, GPIO.FALLING)
 		with open('/etc/netplan/turtlebot_netplan.yaml') as f:
