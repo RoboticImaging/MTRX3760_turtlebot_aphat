@@ -25,10 +25,10 @@ def main():
             "        {}:\n".format(ssid) + \
             "          password: {}\n".format(password) + \
             "      nameservers:\n" + \
-            "	 addresses: [172.17.33.1, 172.17.7.242, 172.17.7.243]" + \
-            "      routes:" + \
-            "        - to: default" + \
-            "        via: 172.17.33.254"
+            "        addresses: [172.17.33.1, 172.17.7.242, 172.17.7.243]\n" + \
+            "      routes:\n" + \
+            "        - to: default\n" + \
+            "          via: 172.17.33.254\n"
     else:
         network_config = \
             "    wlan0:\n" + \
