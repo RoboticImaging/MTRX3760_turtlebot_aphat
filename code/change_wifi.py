@@ -8,6 +8,7 @@ to this script and operates on the actual state of the network at each point in 
 
 Created: 25/11/2022
 Authors: Jack Naylor & Ryan Griffiths
+Updated for 2024: Jack Naylor
 """
 
 import RPi.GPIO as GPIO
@@ -40,7 +41,7 @@ def main():
 				os.system('sudo cp /home/ubuntu/.mtrx/wifi.yaml /etc/netplan/turtlebot_netplan.yaml')
 				print("Changing to Wifi")
 				os.system('sudo netplan apply')
-		time.sleep(1)
+		time.sleep(5)
 
 	GPIO.cleanup()
 

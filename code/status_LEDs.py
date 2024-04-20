@@ -6,6 +6,7 @@ Solid if access point, blinking if connected to WiFi or off if not connected.
 
 Created: 25/11/2022
 Author: Ryan Griffiths & Jack Naylor
+Updated for 2024: Jack Naylor
 """
 
 
@@ -24,7 +25,7 @@ def main():
         network_status = os.popen('nmcli -t -f active,ssid dev wifi').read().strip('\n')
         hostname = os.popen('hostname').read().strip('\n')
 
-        if (network_status == "yes:"+hostname):
+        if ("yes:"+hostname in network_status):
             # Solid if an access point
             GPIO.output(16, 1)
         elif ("yes:" in network_status):
